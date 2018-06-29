@@ -3,6 +3,10 @@
  License: GPLv3
  */
 
+
+/* Details attained from here:
+  https://github.com/dekuNukem/Nintendo_Switch_Reverse_Engineering/blob/master/bluetooth_hid_notes.md#standard-input-report---stick-data
+ */
 #ifndef PRO_H_
 #define PRO_H_
 
@@ -20,10 +24,10 @@
 #define PRO_PRODUCT 0x05c4
 #define PRO_PRODUCT_2 0x09cc
 
-#define PRO_UP_MASK         0x01
+#define PRO_DOWN_MASK       0x01
 #define PRO_RIGHT_MASK      0x02
-#define PRO_DOWN_MASK       0x04
-#define PRO_LEFT_MASK       0x08
+#define PRO_LEFT_MASK       0x04
+#define PRO_UP_MASK         0x08
 
 #define PRO_SQUARE_MASK     0x10
 #define PRO_CROSS_MASK      0x20
@@ -35,8 +39,8 @@
 #define PRO_L2_MASK         0x0004
 #define PRO_R2_MASK         0x0008
 
-#define PRO_SHARE_MASK      0x0010
-#define PRO_OPTIONS_MASK    0x0020
+#define PRO_SHARE_MASK      0x0020
+#define PRO_OPTIONS_MASK    0x0010
 #define PRO_L3_MASK         0x0040
 #define PRO_R3_MASK         0x0080
 
